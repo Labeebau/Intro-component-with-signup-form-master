@@ -106,6 +106,16 @@ term {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+[class*="-error"]{
+    font-size: 10px;
+    text-align: right;
+
+}
+.first-error{
+    color: red;
+    font-size: 10px;
+    text-align: right;
+}
 
 @media only screen and (min-width: 992px) {
     .main {
