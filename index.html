@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
@@ -27,15 +29,31 @@
 
       <div class="form-container">
         <button class="try">Try it free 7 days then $20/mo. thereafter</button>
-        <form>
-          <input id="first-name" class="inputs" type="text" value="First Name">
-          <P class="first-error"></P>
-          <br><br>
-          <input id="last-name" class="inputs"  type="text" value="Last Name"><br><br>
-          <input id="email" class="inputs" type="email" value="Email Address"><br><br>
-          <input id="password" class="inputs" type="password" value="Password"><br><br>
-          <input id="claim" class="input-button" type="button" value="Claim your free trial">
-          <p class="terms">By clicking the button, you are agreeing to our<term> Terms and Services</term></p>
+        <form action="" method="post">
+          <!-- <i class="fa fa-warning icon"></i> -->
+          <div class="input-container">
+            <input id="first-name" class="inputs" type="text" placeholder="First Name" required>
+            <img class="first-error-image" src="images/icon-error.svg" alt="error">
+            <P class="first-error">Frst name cannot be empty</P>
+          </div>
+          <div class="input-container">
+            <input id="last-name" class="inputs" type="text" placeholder="Last Name">
+            <img class="last-error-image" src="images/icon-error.svg" alt="error">
+            <P class="last-error">Last name cannot be empty</P>
+          </div>
+          <div class="input-container">
+            <input id="email" class="inputs" type="email" placeholder="Email Address">
+            <img class="email-error-image" src="images/icon-error.svg" alt="error">
+            <P class="email-error">Email cannot be empty</P>
+          </div>
+          <div class="input-container">
+            <input id="password" class="inputs" type="password" placeholder="Password">
+            <img class="password-error-image" src="images/icon-error.svg" alt="error">
+            <P class="password-error">Password cannot be empty</P>
+          </div>
+          <input id="claim" class="input-button" type="submit" value="Claim your free trial">
+          <p class="terms">By clicking the button, you are agreeing to our<term> Terms and Services</term>
+          </p>
         </form>
       </div>
     </div>
@@ -48,4 +66,5 @@
   </div>
   <script src="script.js" charset="utf-8"></script>
 </body>
+
 </html>
