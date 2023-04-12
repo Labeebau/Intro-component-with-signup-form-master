@@ -1,0 +1,185 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --light-green: hsl(154, 59%, 70%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --font-size: 16px
+        /* - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 */
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--red);
+    font-family: 'Overpass', sans-serif;
+    height: 100%;
+    text-align: center;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    padding: 10px;
+}
+
+.main-container {
+    color: white;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.content {
+    text-align: center;
+    font-size: 14px;
+}
+
+.form-container {
+    align-items: center;
+    padding: 5px;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form i {
+    position: absolute;
+}
+
+.try {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: white;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 8px;
+
+}
+
+.inputs {
+    border: .5px solid lightgray;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 20px;
+    width: 100%;
+
+}
+
+.input-button {
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.input-button:hover {
+    background-color: var(--light-green);
+}
+
+.terms {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+term {
+    color: red;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.error-message {
+    color: red;
+    font-size: 10px;
+    margin: 5px;
+    text-align: right;
+    visibility: hidden;
+}
+
+.input-container {
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    visibility: hidden;
+
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+    .main {
+        align-items: center;
+        display: flex;
+        font-family: 'Overpass', sans-serif;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-container {
+        color: white;
+        margin: 0 auto;
+        padding: 150px;
+        width: 60%;
+    }
+
+    .content {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .form-container {
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 100px 100px 20px 20px;
+        width: 40%;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+}
