@@ -1,7 +1,7 @@
 :root {
     --red: hsl(0, 100%, 74%);
     --green: hsl(154, 59%, 51%);
-    --light-green:hsl(154,59%,70%);
+    --light-green: hsl(154, 59%, 70%);
     --blue: hsl(248, 32%, 49%);
     --dark-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%);
@@ -61,7 +61,8 @@ form {
     border-radius: 10px;
     padding: 20px;
 }
-form i{
+
+form i {
     position: absolute;
 }
 
@@ -93,8 +94,9 @@ form i{
     width: 100%;
     cursor: pointer;
 
-    }
-.input-button:hover{
+}
+
+.input-button:hover {
     background-color: var(--light-green);
 }
 
@@ -115,28 +117,33 @@ term {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-[class*="-error"]{
+
+.error-message {
     color: red;
-    /* display: none; */
     font-size: 10px;
     margin: 5px;
     text-align: right;
-visibility: hidden;
+    visibility: hidden;
 }
-.input-container{
+
+.input-container {
     position: relative;
 }
-[class*="error-image"]{
-    /* display: none; */
-    position:absolute;
+
+.error-icon {
+    position: absolute;
     top: 7px;
     right: 10px;
     visibility: hidden;
 
 }
-.visible{
-    /* display: inline; */
+
+.visible {
     visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 @media only screen and (min-width: 992px) {
